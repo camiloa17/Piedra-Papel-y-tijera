@@ -3,6 +3,7 @@ let array=[
     'papel',
     'tijera'    
 ]
+
 let escogeUsuario; 
 let escogePc;
 document.querySelector("#buttonSubmit").addEventListener("click", iniciar);

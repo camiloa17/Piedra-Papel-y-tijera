@@ -8,10 +8,10 @@ body, button{
 
 body{
     text-align: center;
-    background-color: darkblue;
+    background-color: #011F3F;
     margin:0;
     padding:0;
-    color: white;
+    color: #FEF2BF;
 }
 
 
@@ -70,5 +70,10 @@ button{
 #jugadaPC{
     text-transform: capitalize;
 }
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
 
 
