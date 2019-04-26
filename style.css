@@ -2,9 +2,12 @@
     box-sizing: border-box;
 }
 
+body, button{
+    font-family: 'Press Start 2P', cursive;
+}
+
 body{
     text-align: center;
-    font-family: 'Press Start 2P', cursive;
     background-color: darkblue;
     margin:0;
     padding:0;
@@ -22,5 +25,7 @@ form input{
 }
 
 button{
-    font-family: 'Press Start 2P', cursive;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
 }
