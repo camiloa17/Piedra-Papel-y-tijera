@@ -10,3 +10,15 @@ function pc() {
     array[opcionPc];
     console.log(array[opcionPc])
 }
+
+
+function jugador(){
+    let jugadorSelect = document.querySelectorAll("input")
+    for(let select of jugadorSelect){
+        if(select.checked == true){
+            return select.value;
+        }
+    }
+}
+
+
