@@ -14,11 +14,21 @@ body{
     color: white;
 }
 
+.header{
+    margin-top: 50px;
+}
+
 .computador,
 .jugador{
     display: inline-block;
     width: 49%;
 }
+
+.contenedor-jugadores{
+    margin-top: 80px;
+}
+
+
 
 input{
     margin: 15px 0;
