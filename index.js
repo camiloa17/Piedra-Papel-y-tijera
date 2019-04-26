@@ -3,25 +3,18 @@ let array=[
     'papel',
     'tijera'    
 ]
-let opcionelegida;
 
-
+document.querySelector("#buttonSubmit").addEventListener("click", iniciarDespuesDelSumitted);
 
 function iniciarDespuesDelSumitted () {
-    verSiGano (opcionJugador (), opcionPc () );
-
-}
-
-function opcionJugador() {
-    return("piedra");
-    
+    verSiGano (jugador(), opcionPc () );
 }
 
 
 function opcionPc() {
     let opcionPc = Math.floor(Math.random()*3);
-    array[opcionPc];
-    console.log(array[opcionPc])
+    return array[opcionPc];
+    
 }
 
 

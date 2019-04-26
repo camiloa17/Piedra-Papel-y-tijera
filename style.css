@@ -13,6 +13,37 @@ body{
     padding:0;
     color: white;
 }
+button{
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 3px solid black;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    background-color: rgb(156, 151, 151)
+}
+
+input{
+    margin: 15px 0;
+}
+
+input, 
+label, 
+button{
+    cursor: pointer;
+}
+
+.formulario-area{
+    width:200px;
+    text-align: left;
+    margin: 30px auto;
+}
 
 .header{
     margin-top: 50px;
@@ -29,19 +60,3 @@ body{
 }
 
 
-
-input{
-    margin: 15px 0;
-}
-
-input, 
-label, 
-button{
-    cursor: pointer;
-}
-
-button{
-    height: 50px;
-    width: 150px;
-    border-radius: 5px;
-}
