@@ -5,4 +5,6 @@ let array=[
 ]
 let opcionelegida;
 
+alert("hello");
+
 
