@@ -4,6 +4,7 @@
 
 body{
     text-align: center;
+    font-family: 'Press Start 2P', cursive;
     background-color: darkblue;
     margin:0;
     padding:0;
@@ -18,4 +19,8 @@ body{
 
 form input{
     margin: 15px 0;
+}
+
+button{
+    font-family: 'Press Start 2P', cursive;
 }
