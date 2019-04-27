@@ -71,7 +71,7 @@ button{
     text-transform: capitalize;
 }
 
-body.game-over {
+body.pierde {
     background-color: red;
     opacity: 0.8;
   }
@@ -80,6 +80,11 @@ body.gano {
     background-color: green;
     opacity: 0.8;
   }
+
+body.empato{
+    background-color: #fcd340;
+    opacity: 0.8;
+}
 
 
 

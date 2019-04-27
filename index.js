@@ -57,6 +57,7 @@ function verSiGano(opJug, opPC) {
         resultado("gano")
     } else if (opJug == opPC) {
         console.log("Empate")
+        resultado("empato")
     } else {
         console.log("pierde")
         resultado("pierde")
@@ -66,15 +67,43 @@ function verSiGano(opJug, opPC) {
 
 function resultado(event) {
     if (event == "gano") {
-        document.querySelector("body").classList.add("gano");
+        document.querySelector("body").classList.add(event);
+        changeText(event);
         setTimeout(function () {
-            document.querySelector("body").classList.toggle("gano")
-        }, 200)
+            document.querySelector("body").classList.toggle(event)
+        }, 200);
     } else if (event == "pierde") {
-        document.querySelector("body").classList.add("game-over");
+        document.querySelector("body").classList.add(event);
+        changeText(event);
         setTimeout(function () {
-            document.querySelector("body").classList.toggle("game-over")
+            document.querySelector("body").classList.toggle(event)
         }, 200)
+    } else if (event == "empato"){
+        document.querySelector("body").classList.add(event);
+        changeText(event);
+        setTimeout(function () {
+            document.querySelector("body").classList.toggle(event)
+        }, 200)
+
     }
 
+}
+
+function changeText(event){
+    if(event=="gano"){
+        document.querySelector("h1").innerHTML = "Ganaste!🎉👍";
+        setTimeout(function(){
+            document.querySelector("h1").innerHTML = "Juega Piedra Papel y Tijera";
+        },1000)
+    } else if (event == "pierde"){
+        document.querySelector("h1").innerHTML = "Perdiste! 😢";
+        setTimeout(function () {
+            document.querySelector("h1").innerHTML = "Juega Piedra Papel y Tijera";
+        }, 1000)
+    } else if (event == "empato") {
+        document.querySelector("h1").innerHTML = "Empataste! 🙃";
+        setTimeout(function () {
+            document.querySelector("h1").innerHTML = "Juega Piedra Papel y Tijera";
+        }, 1000)
+    }
 }
