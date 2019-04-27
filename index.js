@@ -49,7 +49,7 @@ function jugador() {
 jugador()
 
 
-
+//Mira si la persona gana o pirede
 function verSiGano(opJug, opPC) {
 
     if ((opJug == "tijera" && opPC == "papel") || (opJug == "papel" && opPC == "piedra") || (opJug == "piedra" && opPC == "tijera")) {
@@ -64,7 +64,7 @@ function verSiGano(opJug, opPC) {
     }
 }
 
-
+//Chequea si la persona gana o pierde y cambia el fondo de pantalla
 function resultado(event) {
     if (event == "gano") {
         document.querySelector("body").classList.add(event);
@@ -89,6 +89,7 @@ function resultado(event) {
 
 }
 
+// cambia el texto del H1 si la persona gana o pierde
 function changeText(event){
     if(event=="gano"){
         document.querySelector("h1").innerHTML = "Ganaste!🎉👍";
