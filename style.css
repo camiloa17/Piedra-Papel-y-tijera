@@ -71,9 +71,15 @@ button{
     text-transform: capitalize;
 }
 
-.game-over {
+body.game-over {
     background-color: red;
     opacity: 0.8;
   }
+
+body.gano {
+    background-color: green;
+    opacity: 0.8;
+  }
+
 
 
