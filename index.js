@@ -68,43 +68,41 @@ function verSiGano(opJug, opPC) {
 function resultado(event) {
     if (event == "gano") {
         document.querySelector("body").classList.add(event);
-        changeText(event);
+
+
         setTimeout(function () {
             document.querySelector("body").classList.toggle(event)
         }, 200);
+
+        document.querySelector("h1").innerHTML = "Ganaste!🎉👍";
+
+        setTimeout(function () {
+            document.querySelector("h1").innerHTML = "Juega Piedra Papel y Tijera";
+        }, 1200)
+
     } else if (event == "pierde") {
         document.querySelector("body").classList.add(event);
-        changeText(event);
-        setTimeout(function () {
-            document.querySelector("body").classList.toggle(event)
-        }, 200)
-    } else if (event == "empato"){
-        document.querySelector("body").classList.add(event);
-        changeText(event);
+
         setTimeout(function () {
             document.querySelector("body").classList.toggle(event)
         }, 200)
 
-    }
-
-}
-
-// cambia el texto del H1 si la persona gana o pierde
-function changeText(event){
-    if(event=="gano"){
-        document.querySelector("h1").innerHTML = "Ganaste!🎉👍";
-        setTimeout(function(){
-            document.querySelector("h1").innerHTML = "Juega Piedra Papel y Tijera";
-        },1000)
-    } else if (event == "pierde"){
         document.querySelector("h1").innerHTML = "Perdiste! 😢";
         setTimeout(function () {
             document.querySelector("h1").innerHTML = "Juega Piedra Papel y Tijera";
-        }, 1000)
+        }, 1200)
+
     } else if (event == "empato") {
+        document.querySelector("body").classList.add(event);
+
+        setTimeout(function () {
+            document.querySelector("body").classList.toggle(event)
+        }, 200)
         document.querySelector("h1").innerHTML = "Empataste! 🙃";
         setTimeout(function () {
             document.querySelector("h1").innerHTML = "Juega Piedra Papel y Tijera";
-        }, 1000)
+        }, 1200)
+
     }
+
 }
