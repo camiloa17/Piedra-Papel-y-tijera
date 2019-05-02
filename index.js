@@ -67,42 +67,30 @@ function verSiGano(opJug, opPC) {
 //Chequea si la persona gana o pierde y cambia el fondo de pantalla
 function resultado(event) {
     if (event == "gano") {
-        document.querySelector("body").classList.add(event);
-
-
-        setTimeout(function () {
-            document.querySelector("body").classList.toggle(event)
-        }, 200);
-
+        agregarEventoAlBody(event);
+        regresarANuevo(event);
         document.querySelector("h1").innerHTML = "Ganaste!🎉👍";
 
-        setTimeout(function () {
-            document.querySelector("h1").innerHTML = "Juega Piedra Papel y Tijera";
-        }, 1200)
-
     } else if (event == "pierde") {
-        document.querySelector("body").classList.add(event);
-
-        setTimeout(function () {
-            document.querySelector("body").classList.toggle(event)
-        }, 200)
-
+        agregarEventoAlBody(event);
+        regresarANuevo(event);
         document.querySelector("h1").innerHTML = "Perdiste! 😢";
-        setTimeout(function () {
-            document.querySelector("h1").innerHTML = "Juega Piedra Papel y Tijera";
-        }, 1200)
-
+        
     } else if (event == "empato") {
-        document.querySelector("body").classList.add(event);
-
-        setTimeout(function () {
-            document.querySelector("body").classList.toggle(event)
-        }, 200)
+        agregarEventoAlBody(event);
+        regresarANuevo(event);
         document.querySelector("h1").innerHTML = "Empataste! 🙃";
-        setTimeout(function () {
-            document.querySelector("h1").innerHTML = "Juega Piedra Papel y Tijera";
-        }, 1200)
-
     }
+}
 
+
+function agregarEventoAlBody(event){
+    document.querySelector("body").classList.add(event);
+}
+
+function regresarANuevo(event){
+    setTimeout(function () {
+        document.querySelector("body").classList.toggle(event);
+        document.querySelector("h1").innerHTML = "Juega Piedra Papel y Tijera";
+    }, 1200);
 }
